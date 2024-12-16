@@ -1,0 +1,665 @@
+body {
+  font-size: 100%;
+  background: #222A27;
+}
+header{
+  width: 1510px;
+  height: 72px;
+  background: linear-gradient(#222A27, #3B623D, #4C944C, #6DFF6B); 
+}
+.logo{
+  float: left;
+}
+.logo a {
+  display: block;
+}
+.logo img{
+  width: 144px;
+  height: 71px;
+  margin-left: 15px;
+}
+.nav {
+  float: left;
+  margin-top: -10px;
+}
+.nav > ul > li {
+  display:inline-block;
+}
+.nav > ul > li > a {
+  display: block;
+  font-family: 'Courier New';
+  font-size: 20px;
+  padding: 13px;
+  margin-top: 5px;
+  color: white;
+  text-decoration: none;
+}
+.prof{
+  float: right;
+  display: flex;
+}
+
+.search{
+  width: 155px;
+  height: 25px;
+  border-radius: 10px;
+  background-color: rgb(255, 255, 255, 0.15);
+}
+input{
+  border: 1px solid  white;
+  font-family: 'Courier New';
+  color: white;
+  padding-left: 5px
+}
+.search::placeholder {
+        color: #fff;
+}
+form{
+  margin-top: 5px;
+}
+button{
+  background-color: rgb(255, 255, 255, 0);
+  border: none;
+  cursor: pointer;
+  font-family: 'Courier New';
+  color: white;
+  font-size: 20px;
+}
+.searchb img{
+   position: absolute;
+  top: 32px;
+  right: 335px;
+  color: #4f5b66;
+  object-fit: cover;
+}
+.searchk{
+display: block;
+  font-family: 'Courier New';
+  font-size: 20px;
+  padding: 13px;
+  color: white;
+  text-decoration: none
+}
+.profnav {
+  float: right;
+  margin-top: 0px;
+}
+.profnav  > li {
+  display:inline-block;
+}
+.profnav  > li > a {
+  display: block;
+  font-family: 'Courier New';
+  font-size: 20px;
+  padding: 13px;
+  color: white;
+  text-decoration: none;
+}
+.searchk img{
+  position: relative;
+  top: 5px;
+  margin-left: 5px;
+}
+.searchp{
+display: block;
+  font-family: 'Courier New';
+  font-size: 20px;
+  padding: 13px;
+  color: white;
+  text-decoration: none
+}
+.searchp img{
+  position: relative;
+  top: 12px;
+  margin-left: 5px;
+}
+.firsts{
+  width: 1510px;
+  height: 450px;
+  background-image: url("images/граф1.png");
+  background-repeat: no-repeat;
+  background-position: right;
+}
+.firsts h1{
+  font-family: 'Protest Revolution';
+  color: white;
+  font-size: 96px;
+  font-weight: 50;
+  text-align: center;
+  margin: 0;
+}
+.firsts h2{
+  font-family: 'Courier New';
+  color: white;
+  font-size: 48px;
+  font-weight: 20;
+  text-align: center;
+  display: flex;
+  margin: 0;/*
+  margin-left: 50px;*/
+}
+.firsts img{
+  float: right;
+  top: -338px;
+  display: inline-block;
+  position: relative;
+  width: 745px;
+  height: 500px;
+}
+.firstb{
+background-color: rgb(255, 255, 255);
+color: black;
+font-size: 36px;
+border-radius: 10px;
+margin-left: 340px;
+margin-top: 35px;
+}
+.textf{
+  display: inline-block;
+  width: 765px;
+  margin-left: 50px;
+  margin-top: 55px;
+}
+.seconds{
+  height: 2170px;
+  background-image: url(images/граф2.png), url(images/граф3.png), linear-gradient(#6DFF6B,#4C944C, #3B623D, #222A27, 4%, #222A27);
+  background-repeat: no-repeat, no-repeat;
+  background-position:
+    left,
+    bottom 340px right;
+  margin-top: 50px;
+}
+.seconds h1{
+  width: 370px;
+  height: 42px;
+  font-family: 'Courier New';
+  color: white;
+  font-size: 36px;
+  font-weight: 20;
+  padding-top: 70px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  white-space: nowrap;
+}
+
+/*СЛАЙДЕР*/
+
+.carousel {
+  margin-left: 15%;
+  margin-right: 15%;
+  height: 550px;
+}
+
+ul.slides {
+  display: block;
+  position: relative;
+  width: 1080px;
+  height: 600px;
+  top: -200px;
+  padding: 0;
+  overflow: hidden;
+  list-style: none;
+}
+
+.slides * {
+  user-select: none;
+  -ms-user-select: none;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -webkit-touch-callout: none;
+}
+
+ul.slides input {
+  display: none;
+}
+.slide-container {
+  display: block;
+}
+
+.slide-image {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  opacity: 0;
+  transition: all .7s ease-in-out;
+  margin-top: 10px;
+}
+
+.slide-image img {
+  width: auto;
+  min-width: 100%;
+  height: 100%;
+
+}
+
+.carousel-controls {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
+  font-size: 100px;
+  line-height: 600px;
+  color: #fff;
+}
+
+.carousel-controls label {
+  display: none;
+  position: absolute;
+  padding: 0 20px;
+  transition: opacity .2s;
+  cursor: pointer;
+}
+
+.slide-image:hover + .carousel-controls label{
+  opacity: 0.5;
+
+}
+.carousel a{
+  
+}
+.carousel-controls label:hover {
+  text-shadow: 0 0 5px #00ff00, 0 0 10px #00ff00, 0 0 15px #00ff00;
+  transition: .5s;
+}
+
+.carousel-controls .prev-slide {
+  width: 10%;
+  font-family: 'Protest Revolution';
+  text-align: left;
+  left: 0;
+}
+
+.carousel-controls .next-slide {
+  width: 10%;
+  font-family: 'Protest Revolution';
+  text-align: right;
+  right: 0;
+}
+
+.carousel-dots {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 20px;
+  z-index: 999;
+  text-align: center;
+}
+
+.carousel-dots .carousel-dot {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #fff;
+  opacity: 0.5;
+  margin: 10px;
+}
+.carousel-dots label:hover{
+  box-shadow: 0px 0px 5px 5px #6DFF6B;
+  transition: .5s;
+  opacity: 1;
+  cursor: pointer;
+}
+
+
+input:checked + .slide-container .slide-image {
+  opacity: 1;
+  transform: scale(1);
+  transition: opacity 1s ease-in-out;
+
+}
+
+input:checked + .slide-container .carousel-controls label {
+   display: block;
+
+}
+
+input#img-1:checked ~ .carousel-dots label#img-dot-1,
+input#img-2:checked ~ .carousel-dots label#img-dot-2,
+input#img-3:checked ~ .carousel-dots label#img-dot-3,
+input#img-4:checked ~ .carousel-dots label#img-dot-4,
+input#img-5:checked ~ .carousel-dots label#img-dot-5,
+input#img-6:checked ~ .carousel-dots label#img-dot-6 {
+opacity: 1;
+}
+
+input:checked + .slide-container .nav label { display: block; }
+
+/*КАРТОЧКА ТОВАРА*/
+
+.cards{
+  padding: 0 20px ;
+}
+.card {
+  width: 300px;
+  min-height: 430px;
+  box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.1);
+  display: inline-block;
+  flex-direction: column;
+  border: 4px solid black;
+  border-radius: 10px;
+  background-color: white;
+  transition: 0.2s;
+  position: relative;
+  margin: 0 25px;
+}
+
+.card:hover {
+  box-shadow: 0px 0px 10px 10px rgba(109, 255, 107, 0.5);
+}
+
+.card__top {
+  flex: 0 0 220px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 7px;
+}
+
+.card__image {
+  text-align: center;
+  top: 50px;
+  left: 0;
+  width: 200px;
+  height: 200px;
+}
+
+.card__image > img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain; 
+  transition: 0.2s;
+}
+
+.card__image:hover > img {
+  transform: scale(1.1);
+}
+
+.card__label {
+  padding: 4px 8px;
+  position: absolute;
+  top: 15px;
+  right: 45px;
+  font-family: 'Courier New';
+  color: white;
+  font-size: 36px;
+  z-index: 1;
+}
+.card__labeli{
+  position: absolute;
+  width: 180px;
+  height: 80px;
+  right: 5px;
+}
+.card__bottom {
+  display: flex;
+  flex-direction: column;
+  flex: 1 0 auto; 
+  padding: 10px;
+}
+
+.card__prices {
+  margin-bottom: 10px;
+}
+
+.card__price::after {
+  content: "₽";
+  margin-left: 4px;
+  position: relative;
+}
+
+.card__price--discount {
+  font-weight: 700;
+  display: flex;
+  flex-wrap: wrap-reverse;
+  font-family: 'Protest Revolution';
+  font-size: 20px;
+  color: #6DFF6B;
+}
+
+
+.card__price--common {
+  font-weight: 400;
+  color: #606060;
+  display: flex;
+  flex-wrap: wrap-reverse;
+  text-decoration: line-through;
+  font-family: 'Protest Revolution';
+  font-size: 16px;
+}
+
+.card__title {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 150%;
+  color: #414141;
+  font-family: 'Courier New';
+  font-size: 16px;
+  text-decoration: none;
+}
+
+.card__title:hover {
+  color: #6DFF6B;
+}
+
+.card__add {
+  display: block;
+  width: 100%;
+  font-weight: 400;
+  font-size: 17px;
+  color: #6DFF6B;
+  padding: 10px;
+  text-align: center;
+  border-radius: 4px;
+  cursor: pointer; 
+  transition: 0.2s;
+  margin-top: auto;
+  box-shadow: 0px 0px 5px 5px rgba(109, 255, 107, 0.5);
+  overflow:hidden;
+}
+.card__add:before {
+  font-family: FontAwesome;
+  content:"\f07a";
+  position: relative;
+  top: 0;
+  left: -110px;
+  transition: all 200ms ease;
+}
+.card__add:hover {
+  border: none;
+  background-color: #6DFF6B;
+  color: #fff;
+  box-shadow: 0px 0px 5px 5px rgba(109, 255, 107, 0);
+}
+.card__add:hover:before {
+  left: -5px;
+}
+.pricet{
+  margin-left: 35px
+}
+.moreb{
+  width: 400px;
+  height: 55px;
+  background-color: #6DFF6B;
+  color: black;
+  display: block;
+  margin: 50px auto;
+  border-radius: 10px;
+  font-size: 32px;
+  text-align: center;
+}
+.our{
+  margin-top: -70px;
+}
+.dops h2{
+  font-family: 'Courier New';
+  font-size: 30px;
+  color: white;
+  font-weight: 400;
+}
+.dops p{
+  font-family: 'Courier New';
+  font-size: 32px;
+  color: white;
+  font-weight: 400;
+}
+.dop {
+  display: inline-block;
+  text-align: center;
+  margin: 0 60px;
+}
+.feedback{
+  height: 670px;
+  background: linear-gradient(#6DFF6B, #4C944C, #3B623D, #222A27, 11%, #222A27, 87%, #222A27, #3B623D, #4C944C, #6DFF6B);
+}
+.feedback h1{
+  width: 370px;
+  height: 42px;
+  font-family: 'Courier New';
+  color: white;
+  font-size: 36px;
+  font-weight: 20;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  padding-top: 80px;
+}
+.feedback form{
+  display: inline-block;
+  background-color:#ffffff;
+  width:640px;
+  height: 360px;
+  padding: 25px 12px;
+  border-radius: 10px;
+  border: 5px solid black;
+}
+.feedback input{
+  justify-content: space-between;
+  width: 275px;
+  height: 45px;
+  margin: 0 10px;
+  border-radius: 5px;
+  border: 3px solid #828282;
+  font-family: 'Courier New';
+  font-size: 16px;
+  padding-left: 15px; 
+}
+.feedback textarea{
+  width: 580px;
+  height: 165px;
+  margin-left: 10px;
+  margin-top: 25px;
+  border-radius: 5px;
+  border: 3px solid #828282;
+  padding: 15px 15px;
+  font-family: 'Courier New';
+  font-size: 16px;
+}
+.feedback button{
+  width: 295px;
+  height: 55px;
+  background-color: #6DFF6B;
+  color: black;
+  display: inline-block;
+  border-radius: 5px;
+  font-size: 32px;
+  text-align: center;
+  margin: 25px 10px;
+}
+.feedback label{
+  justify-content: space-between;
+}
+.feedback p{
+  font-family: 'Courier New';
+  color: white;
+  font-size: 55px;
+  font-weight: 20;
+  text-align: center;
+  padding: 0 50px;
+  margin: 0 auto;
+  line-height: 1.8;
+}
+.feedbackp{
+  width: 770px;
+  height: 420px;
+  display: inline-block;
+  margin: auto;
+  background-image: url(images/граф4.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 155px 420px;
+}
+footer {
+  margin: auto;
+  height: 175px;
+}
+.media{
+  display: inline-block;
+}
+.contacts, .social{
+  width: 300px;
+  display: inline-block;
+  margin: 30px 0;
+
+  padding: 0 100px;
+}
+.contacts h2{
+  font-family: 'Courier New';
+  color: white;
+  font-size: 24px;
+  font-weight: 40;
+}
+.contacts p{
+  font-family: 'Courier New';
+  color: white;
+  font-size: 20px;
+  font-weight: 40;
+}
+.social{
+  width: 400px;
+  height: 150px;
+}
+.social ul{
+  text-decoration: none;
+  list-style: none;
+  padding-left: 0;
+}
+.social li{
+  text-decoration: none;
+  list-style: none;
+}
+.social h2{
+  font-family: 'Courier New';
+  color: white;
+  font-size: 24px;
+  font-weight: 40;
+}
+.social p{
+  font-family: 'Courier New';
+  color: white;
+  font-size: 20px;
+  font-weight: 40;
+  padding-left: 50px;
+}
+.social img{
+  position: absolute;
+}
+.footp{
+  font-family: 'Protest Revolution';
+  font-size: 24px;
+  color: white;
+  float: right;
+  margin-top: 160px;
+  display: flex;
+}
+ footer .logo img {
+  margin-top: 70px;
+  width: 215px;
+  height: 105px;
+}

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="stylereg.css">
+	<title>Вход в профиль</title>
+	<script src="reg.js"></script>
+</head>
+<body>
+	<h1>Добро пожаловать!</h1>
+	<h2>Зарегистрируётесь или войдите<br>в свой профиль</h2>
+	<div class="container">
+		<input type="radio" name="tab" id="signin" checked="checked"/>
+		<input type="radio" name="tab" id="register"/>
+		<div class="pages">
+			<div class="page">
+				<div class="input">
+					<div class="title"><i class="material-icons"></i></div>
+					<input class="text" type="text" placeholder="Имя"/>
+				</div>
+				<div class="input">
+					<div class="title"><i class="material-icons"></i></div>
+					<input class="text" type="password" placeholder="Пароль"/>
+				</div>
+				<div class="input">
+					<input type="submit" value="ВОЙТИ"/>
+				</div>
+			</div>
+			<div class="page signup">
+				<div class="input">
+					<div class="title"><i class="material-icons"></i> </div>
+					<input class="text" type="text" placeholder="Имя"/>
+				</div>
+				<div class="input">
+					<div class="title"><i class="material-icons"></i> </div>
+					<input class="text" type="password" placeholder="Email"/>
+				</div>
+				<div class="input">
+					<input type="submit" value="ЗАРЕГИСТРИРОВАТЬСЯ"/>
+				</div>
+			</div>
+		</div>
+		<div class="tabs">
+			<label class="tab" for="signin">
+				<div class="text">ВХОД</div>
+			</label>
+			<label class="tab" for="register">
+				<div class="text">РЕГИСТРАЦИЯ</div>
+			</label>
+		</div>
+	</div>
+</body>
+</html>
